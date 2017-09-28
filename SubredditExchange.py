@@ -4,8 +4,6 @@ import requests
 import requests.auth
 import urllib
 
-app_client_id=''
-app_client_secret=''
 app_redirect_uri='http://localhost/reddit_callback'
 app_user_agent='subreddit_exchange_testing by /u/karldreher'
 
@@ -36,7 +34,7 @@ def make_authorization_url():
               "redirect_uri": app_redirect_uri,
               "duration": "temporary",
               "scope": "identity"}
-    url = "https://www.reddit.com/api/v1/authorize?" + urllib.urlencode(params)
+    url = "https://www.reddit.com/api/v1/authorize?" + urllib.parse.urlencode(params)
     return url
 
 
