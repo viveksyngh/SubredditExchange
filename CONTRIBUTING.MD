@@ -1,4 +1,4 @@
-How to Contribute
+# How to Contribute
 
 Clone the repository, copy the config.yaml.example file to config.yaml, and obtain your own Reddit API AppId and secret key to begin developing. Create a key using the "Web app" selection.
 
